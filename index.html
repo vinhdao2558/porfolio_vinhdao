@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinh | DevOps & Cloud Engineer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts: Inter for text, Fira Code for Terminal elements -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        dark: '#0f172a',
+                        terminal: '#1e293b',
+                        primary: '#14b8a6', // Teal
+                        accent: '#8b5cf6', // Violet
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; }
+        
+        /* Terminal Typing Effect */
+        .typing-container { display: inline-block; }
+        .typing-text {
+            overflow: hidden;
+            border-right: .15em solid #14b8a6;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .1em;
+            animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        @keyframes typing { from { width: 0 } to { width: 100% } }
+        @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #14b8a6; } }
+
+        /* Grid Pattern Background */
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-grid min-h-screen antialiased selection:bg-primary selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-dark/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="font-mono text-xl font-bold text-white flex items-center gap-2">
+                <span class="text-primary">></span> vinh_devops<span class="animate-pulse">_</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-primary transition">./about</a>
+                <a href="#skills" class="hover:text-primary transition">./skills</a>
+                <a href="#projects" class="hover:text-primary transition">./projects</a>
+            </div>
+            <a href="mailto:your.email@gmail.com" class="bg-primary/10 text-primary border border-primary/30 px-4 py-2 rounded-md font-mono text-sm hover:bg-primary hover:text-dark transition">
+                Connect()
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="font-mono text-primary mb-4">Hello World, I am</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">Vinh<span class="text-primary">.</span></h1>
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-400 mb-6">Cloud & DevOps Engineer</h2>
+                <p class="text-slate-400 text-lg leading-relaxed mb-8 max-w-lg">
+                    Tự động hóa hệ thống, xây dựng luồng CI/CD tối ưu và đảm bảo hạ tầng Cloud luôn hoạt động ổn định (High Availability). Biến những quy trình thủ công phức tạp thành Code.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#projects" class="bg-primary text-dark font-bold px-6 py-3 rounded-md hover:bg-teal-400 transition flex items-center gap-2">
+                        <i data-lucide="terminal" class="w-5 h-5"></i> View Projects
+                    </a>
+                    <a href="https://github.com/your-github" target="_blank" class="bg-slate-800 text-white font-bold px-6 py-3 rounded-md hover:bg-slate-700 transition flex items-center gap-2">
+                        <i data-lucide="github" class="w-5 h-5"></i> GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Terminal Mockup -->
+            <div class="bg-terminal rounded-lg border border-slate-700 shadow-2xl overflow-hidden font-mono text-sm">
+                <div class="bg-slate-800 px-4 py-2 flex items-center gap-2 border-b border-slate-700">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    <span class="ml-2 text-slate-400 text-xs">vinh@ubuntu: ~</span>
+                </div>
+                <div class="p-6 text-slate-300">
+                    <div class="mb-2"><span class="text-green-400">vinh@ubuntu</span>:<span class="text-blue-400">~</span>$ whoami</div>
+                    <div class="mb-4 text-slate-100">DevOps Enthusiast | Problem Solver</div>
+                    
+                    <div class="mb-2"><span class="text-green-400">vinh@ubuntu</span>:<span class="text-blue-400">~</span>$ cat mission.txt</div>
+                    <div class="mb-4 text-slate-100">
+                        "Giảm thời gian release từ vài giờ xuống còn vài phút.<br>
+                        "Xóa bỏ câu nói: 'Nhưng code chạy tốt trên máy em mà!' "
+                    </div>
+
+                    <div class="flex">
+                        <span class="text-green-400">vinh@ubuntu</span>:<span class="text-blue-400">~</span>$ 
+                        <div class="typing-container ml-2 text-primary">
+                            <span class="typing-text">./deploy_infrastructure.sh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="skills" class="py-20 bg-slate-800/50 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-3">
+                <i data-lucide="cpu" class="text-primary"></i> Tech Stack
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Cụm Cloud -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-primary/50 transition">
+                    <h3 class="font-mono text-primary mb-4 flex items-center gap-2"><i data-lucide="cloud" class="w-4 h-4"></i> Cloud & OS</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> AWS (EC2, S3, RDS)</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Google Cloud (Firebase)</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Linux (Ubuntu, CentOS)</li>
+                    </ul>
+                </div>
+
+                <!-- Cụm CI/CD -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-primary/50 transition">
+                    <h3 class="font-mono text-primary mb-4 flex items-center gap-2"><i data-lucide="git-merge" class="w-4 h-4"></i> CI / CD</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> GitHub Actions</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> GitLab CI</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Jenkins</li>
+                    </ul>
+                </div>
+
+                <!-- Cụm Container -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-primary/50 transition">
+                    <h3 class="font-mono text-primary mb-4 flex items-center gap-2"><i data-lucide="box" class="w-4 h-4"></i> Containerization</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Docker</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Docker Compose</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Kubernetes (Learning)</li>
+                    </ul>
+                </div>
+
+                <!-- Cụm Monitor & Script -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-primary/50 transition">
+                    <h3 class="font-mono text-primary mb-4 flex items-center gap-2"><i data-lucide="activity" class="w-4 h-4"></i> Ops & Scripting</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Bash / Shell Script</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Python</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Nginx / Traefik</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-4 flex items-center gap-3">
+                <i data-lucide="folder-git-2" class="text-primary"></i> Featured Architectures
+            </h2>
+            <p class="text-slate-400 mb-12">Những bài toán hệ thống thực tế mình đã thiết kế và triển khai.</p>
+            
+            <div class="space-y-12">
+                <!-- Project 1: Cái bạn vừa làm xong -->
+                <div class="bg-slate-800/30 rounded-2xl border border-slate-700 p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 hover:bg-slate-800/50 transition">
+                    <div class="lg:col-span-7">
+                        <h3 class="text-2xl font-bold text-white mb-4">Zero-Downtime CI/CD Pipeline cho SPA</h3>
+                        <div class="bg-slate-900 rounded-lg p-4 font-mono text-xs text-slate-400 mb-6 border border-slate-700">
+                            <span class="text-accent">Problem:</span> Dev tốn thời gian build code Frontend thủ công, file nén cấu trúc lộn xộn gây lỗi 404 khi deploy lên Server/Firebase.<br><br>
+                            <span class="text-primary">Solution:</span> Xây dựng luồng GitHub Actions tự động hóa hoàn toàn. Tự cài đặt Node.js, tìm kiếm file gốc, tự động build mã tĩnh và publish trực tiếp lên Firebase Hosting chỉ trong 40 giây.
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-mono border border-primary/20">GitHub Actions</span>
+                            <span class="bg-orange-500/10 text-orange-400 px-3 py-1 rounded-full text-xs font-mono border border-orange-500/20">Firebase Hosting</span>
+                            <span class="bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full text-xs font-mono border border-blue-500/20">Bash Script</span>
+                            <span class="bg-yellow-500/10 text-yellow-400 px-3 py-1 rounded-full text-xs font-mono border border-yellow-500/20">Node.js</span>
+                        </div>
+                        <a href="#" class="text-white hover:text-primary transition flex items-center gap-2 font-medium">
+                            <i data-lucide="external-link" class="w-4 h-4"></i> Xem File YAML Cấu Hình trên GitHub
+                        </a>
+                    </div>
+                    <div class="lg:col-span-5 bg-dark rounded-xl border border-slate-700 flex items-center justify-center p-6 relative overflow-hidden group">
+                        <!-- Mô phỏng sơ đồ kiến trúc đơn giản -->
+                        <div class="text-center space-y-4 relative z-10">
+                            <div class="bg-slate-800 border border-slate-600 px-4 py-2 rounded-lg text-sm font-mono text-slate-300">1. Dev Push Code (Zip/Git)</div>
+                            <i data-lucide="arrow-down" class="mx-auto text-primary animate-bounce"></i>
+                            <div class="bg-slate-800 border border-primary px-4 py-2 rounded-lg text-sm font-mono text-primary shadow-[0_0_15px_rgba(20,184,166,0.3)]">2. GitHub Actions (NPM Build)</div>
+                            <i data-lucide="arrow-down" class="mx-auto text-primary animate-bounce"></i>
+                            <div class="bg-slate-800 border border-orange-500 px-4 py-2 rounded-lg text-sm font-mono text-orange-400">3. Live on Firebase (Global CDN)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Một project mẫu bạn có thể làm sắp tới -->
+                <div class="bg-slate-800/30 rounded-2xl border border-slate-700 p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 hover:bg-slate-800/50 transition">
+                    <div class="lg:col-span-5 bg-dark rounded-xl border border-slate-700 flex items-center justify-center p-6 order-2 lg:order-1">
+                        <!-- Sơ đồ kiến trúc mẫu -->
+                        <div class="flex items-center gap-4 text-slate-400 font-mono text-xs">
+                            <div class="text-center"><i data-lucide="globe" class="w-8 h-8 mx-auto mb-2 text-blue-400"></i> Internet</div>
+                            <i data-lucide="arrow-right" class="text-slate-600"></i>
+                            <div class="text-center"><i data-lucide="server" class="w-8 h-8 mx-auto mb-2 text-primary"></i> Traefik Proxy</div>
+                            <i data-lucide="arrow-right" class="text-slate-600"></i>
+                            <div class="flex flex-col gap-2">
+                                <div class="border border-slate-600 px-2 py-1 rounded">API App</div>
+                                <div class="border border-slate-600 px-2 py-1 rounded">Web App</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7 order-1 lg:order-2">
+                        <h3 class="text-2xl font-bold text-white mb-4">Dockerized Microservices với Traefik</h3>
+                        <div class="bg-slate-900 rounded-lg p-4 font-mono text-xs text-slate-400 mb-6 border border-slate-700">
+                            <span class="text-accent">Problem:</span> Khó quản lý nhiều ứng dụng chạy chung một Server. Xung đột Port, xin chứng chỉ SSL Let's Encrypt thủ công tốn thời gian.<br><br>
+                            <span class="text-primary">Solution:</span> Đóng gói (Dockerize) toàn bộ App. Sử dụng Traefik làm Reverse Proxy để tự động điều hướng Domain, tự động xin & gia hạn chứng chỉ SSL (HTTPS) mà không cần cấu hình lại Nginx mỗi khi thêm App mới.
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full text-xs font-mono border border-blue-500/20">Docker Compose</span>
+                            <span class="bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full text-xs font-mono border border-cyan-500/20">Traefik</span>
+                            <span class="bg-green-500/10 text-green-400 px-3 py-1 rounded-full text-xs font-mono border border-green-500/20">Let's Encrypt</span>
+                        </div>
+                        <a href="#" class="text-white hover:text-primary transition flex items-center gap-2 font-medium">
+                            <i data-lucide="github" class="w-4 h-4"></i> Xem Source Code Docker Compose
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-dark py-8 text-center">
+        <p class="text-slate-500 font-mono text-sm">
+            Designed & Built by Vinh <br>
+            <span class="text-xs mt-2 inline-block">Hosted on Firebase | CI/CD powered by GitHub Actions</span>
+        </p>
+    </footer>
+
+    <script>
+        // Khởi tạo icon
+        lucide.createIcons();
+    </script>
+</body>
+</html>
