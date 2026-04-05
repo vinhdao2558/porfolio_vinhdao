@@ -63,10 +63,11 @@
             <a href="#" class="font-mono text-xl font-bold text-white flex items-center gap-2">
                 <span class="text-primary">></span> vinh_devops<span class="animate-pulse">_</span>
             </a>
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+            <div class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium text-slate-300">
                 <a href="#about" class="hover:text-primary transition">./about</a>
                 <a href="#experience" class="hover:text-primary transition">./experience</a>
                 <a href="#skills" class="hover:text-primary transition">./skills</a>
+                <a href="#certifications" class="hover:text-primary transition">./certs</a>
                 <a href="#projects" class="hover:text-primary transition">./projects</a>
             </div>
             <a href="mailto:your.email@gmail.com" class="bg-primary/10 text-primary border border-primary/30 px-4 py-2 rounded-md font-mono text-sm hover:bg-primary hover:text-dark transition">
@@ -105,7 +106,7 @@
                 </div>
                 <div class="p-6 text-slate-300">
                     <div class="mb-2"><span class="text-green-400">vinh@ubuntu</span>:<span class="text-blue-400">~</span>$ whoami</div>
-                    <div class="mb-4 text-slate-100">IT Helpdesk -> System Engineer -> DevOps Engineer</div>
+                    <div class="mb-4 text-slate-100">IT Helpdesk -> System Engineer -> DevOps</div>
                     
                     <div class="mb-2"><span class="text-green-400">vinh@ubuntu</span>:<span class="text-blue-400">~</span>$ cat mindset.txt</div>
                     <div class="mb-4 text-slate-100">
@@ -212,8 +213,8 @@
                 <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-primary/50 transition">
                     <h3 class="font-mono text-primary mb-4 flex items-center gap-2"><i data-lucide="bar-chart-2" class="w-4 h-4"></i> Monitoring</h3>
                     <ul class="space-y-2 text-slate-300">
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Prometheus</li>
-                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Grafana</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Zabbix</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Prometheus & Grafana</li>
                         <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Uptime Kuma / ELK</li>
                     </ul>
                 </div>
@@ -231,8 +232,180 @@
         </div>
     </section>
 
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-3">
+                <i data-lucide="award" class="text-primary"></i> Chứng Chỉ & Năng Lực
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Cert 1: AWS DevOps -->
+                <div class="bg-slate-800/30 rounded-2xl border border-slate-700 p-6 hover:bg-slate-800/60 hover:border-primary/50 transition-all group flex flex-col h-full">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-[#FF9900] group-hover:scale-110 transition-transform shrink-0">
+                            <i data-lucide="cloud" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base leading-snug">Getting Started DevOps on AWS</h3>
+                            <p class="text-slate-400 text-xs mt-1">Amazon Web Services</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs text-slate-500 font-mono mb-3">Issued: Aug 2023</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">DevOps</span>
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 2: AWS Tech Essentials -->
+                <div class="bg-slate-800/30 rounded-2xl border border-slate-700 p-6 hover:bg-slate-800/60 hover:border-primary/50 transition-all group flex flex-col h-full">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-[#FF9900] group-hover:scale-110 transition-transform shrink-0">
+                            <i data-lucide="cloud" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base leading-snug">AWS Technical Essentials</h3>
+                            <p class="text-slate-400 text-xs mt-1">Amazon Web Services</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs text-slate-500 font-mono mb-3">Issued: Jul 2024</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">Cloud Storage</span>
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">Cloud Apps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 3: CCNA -->
+                <div class="bg-slate-800/30 rounded-2xl border border-slate-700 p-6 hover:bg-slate-800/60 hover:border-blue-400/50 transition-all group flex flex-col h-full">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform shrink-0">
+                            <i data-lucide="network" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base leading-snug">CCNA Service Provider Operations</h3>
+                            <p class="text-slate-400 text-xs mt-1">Cisco</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs text-slate-500 font-mono mb-3">Issued: Jul 2023</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">Networking</span>
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">Routing/Switching</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 4: MCSA -->
+                <div class="bg-slate-800/30 rounded-2xl border border-slate-700 p-6 hover:bg-slate-800/60 hover:border-blue-500/50 transition-all group flex flex-col h-full">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-blue-500 group-hover:scale-110 transition-transform shrink-0">
+                            <i data-lucide="server" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base leading-snug">Microsoft Certified Solutions Associate</h3>
+                            <p class="text-slate-400 text-xs mt-1">Microsoft (MCSA)</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs text-slate-500 font-mono mb-3">Issued: May 2024</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">Windows Server</span>
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">TCP/IP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 5: Databricks Lakehouse -->
+                <div class="bg-slate-800/30 rounded-2xl border border-slate-700 p-6 hover:bg-slate-800/60 hover:border-red-400/50 transition-all group flex flex-col h-full">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-red-400 group-hover:scale-110 transition-transform shrink-0">
+                            <i data-lucide="database" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base leading-snug">Databricks Lakehouse Fundamentals</h3>
+                            <p class="text-slate-400 text-xs mt-1">Databricks</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs text-slate-500 font-mono mb-3">Issued: Jul 2024 | ID: 107749493</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">Data Lake</span>
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">Big Data</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 6: Databricks Gen AI -->
+                <div class="bg-slate-800/30 rounded-2xl border border-slate-700 p-6 hover:bg-slate-800/60 hover:border-red-400/50 transition-all group flex flex-col h-full">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-red-400 group-hover:scale-110 transition-transform shrink-0">
+                            <i data-lucide="cpu" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base leading-snug">Generative AI Fundamentals</h3>
+                            <p class="text-slate-400 text-xs mt-1">Databricks</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs text-slate-500 font-mono mb-3">Issued: Jun 2024 | ID: 106533496</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">Gen AI</span>
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">LLMs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 7: AWS Cloud Quest -->
+                <div class="bg-slate-800/30 rounded-2xl border border-slate-700 p-6 hover:bg-slate-800/60 hover:border-primary/50 transition-all group flex flex-col h-full">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-[#FF9900] group-hover:scale-110 transition-transform shrink-0">
+                            <i data-lucide="cloud" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base leading-snug">AWS Cloud Quest: Cloud Practitioner</h3>
+                            <p class="text-slate-400 text-xs mt-1">Amazon Web Services</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs text-slate-500 font-mono mb-3">Issued: Jul 2024</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">TCP/IP</span>
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">Cloud Basics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert 8: TOEIC -->
+                <div class="bg-slate-800/30 rounded-2xl border border-slate-700 p-6 hover:bg-slate-800/60 hover:border-green-400/50 transition-all group flex flex-col h-full">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700 flex items-center justify-center text-green-400 group-hover:scale-110 transition-transform shrink-0">
+                            <i data-lucide="languages" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white text-base leading-snug">TOEIC - 600</h3>
+                            <p class="text-slate-400 text-xs mt-1">IIG Vietnam</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto">
+                        <p class="text-xs text-slate-500 font-mono mb-3">Issued: Nov 2021</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">English</span>
+                            <span class="bg-slate-900 border border-slate-700 text-slate-300 px-2 py-1 rounded text-[10px] font-mono">Communication</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
-    <section id="projects" class="py-20 px-4">
+    <section id="projects" class="py-20 px-4 bg-slate-900 border-t border-slate-800">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-bold text-white mb-4 flex items-center gap-3">
                 <i data-lucide="folder-git-2" class="text-primary"></i> Dự Án Tiêu Biểu
@@ -297,59 +470,12 @@
                             <span class="text-primary">System Engineer Solution:</span> Thiết lập hệ thống Monitor tập trung. Cài đặt các Agent thu thập metrics (CPU, RAM, Disk I/O, Network traffic). Xây dựng Dashboard trực quan và cấu hình rule bắn thông báo khẩn cấp thẳng về nhóm Telegram của đội IT khi thông số vượt ngưỡng an toàn.
                         </div>
                         <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-red-500/10 text-red-400 px-3 py-1 rounded-full text-xs font-mono border border-red-500/20">Prometheus</span>
+                            <span class="bg-red-500/10 text-red-400 px-3 py-1 rounded-full text-xs font-mono border border-red-500/20">Zabbix / Prometheus</span>
                             <span class="bg-orange-500/10 text-orange-400 px-3 py-1 rounded-full text-xs font-mono border border-orange-500/20">Grafana Dashboard</span>
                             <span class="bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full text-xs font-mono border border-blue-500/20">Telegram Webhook Alert</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Project 3: Local AI Server (NEW) -->
-                <div class="bg-slate-800/30 rounded-2xl border border-slate-700 p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 hover:bg-slate-800/50 transition">
-                    <div class="lg:col-span-7">
-                        <h3 class="text-2xl font-bold text-white mb-4">Triển khai Hạ tầng Máy chủ AI Nội bộ (Local AI Server)</h3>
-                        <div class="bg-slate-900 rounded-lg p-4 font-mono text-xs text-slate-400 mb-6 border border-slate-700 leading-relaxed">
-                            <span class="text-accent">Problem:</span> Doanh nghiệp cần môi trường chạy mô hình ngôn ngữ lớn (LLMs) nội bộ để đảm bảo bảo mật dữ liệu tuyệt đối. Cần tận dụng tối đa card đồ họa rời (NVIDIA GTX 1060) trên máy chủ vật lý đang chạy nền tảng ảo hóa.<br><br>
-                            <span class="text-primary">DevOps Solution:</span><br>
-                            1. Cấu hình IOMMU trên Proxmox và áp dụng kỹ thuật <strong>PCIe Passthrough (Raw Device)</strong> để đẩy thẳng GPU vật lý vào Ubuntu VM.<br>
-                            2. <strong>Troubleshooting sâu ở tầng OS:</strong> Khắc phục sự cố xác thực SSH do Cloud-Init cache (override file sshd_config.d) và fix lỗi Error 43 của NVIDIA trên môi trường ảo hóa bằng cờ CPU Host.<br>
-                            3. Triển khai CUDA Toolkit, Ollama và model Llama-3. Kết quả: Nạp thành công model 4.7GB vào VRAM, đẩy 100% tải suy luận (Inference) sang GPU giúp tốc độ phản hồi cực kỳ nhanh chóng.
-                        </div>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-orange-500/10 text-orange-400 px-3 py-1 rounded-full text-xs font-mono border border-orange-500/20">Proxmox VE</span>
-                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-mono border border-accent/20">PCIe Passthrough</span>
-                            <span class="bg-green-500/10 text-green-400 px-3 py-1 rounded-full text-xs font-mono border border-green-500/20">NVIDIA CUDA & Ollama</span>
-                            <span class="bg-blue-500/10 text-blue-400 px-3 py-1 rounded-full text-xs font-mono border border-blue-500/20">Cloud-Init / Linux OS</span>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-5 bg-dark rounded-xl border border-slate-700 flex items-center justify-center p-6 relative overflow-hidden group">
-                        <!-- Sơ đồ kiến trúc GPU Passthrough -->
-                        <div class="text-center space-y-4 relative z-10 w-full">
-                            <div class="bg-slate-800 border border-slate-600 px-4 py-3 rounded-lg text-sm font-mono text-slate-300 shadow-lg flex items-center justify-center gap-2">
-                                <i data-lucide="server" class="w-4 h-4"></i> Proxmox Host
-                            </div>
-                            
-                            <div class="flex justify-center items-center gap-2 text-xs text-accent font-mono">
-                                <i data-lucide="arrow-down" class="w-4 h-4"></i> IOMMU Passthrough
-                            </div>
-                            
-                            <div class="bg-slate-800 border border-green-500/50 p-3 rounded-lg text-sm font-mono text-green-400 shadow-[0_0_15px_rgba(34,197,94,0.15)] flex flex-col items-center gap-2">
-                                <div class="flex items-center gap-2 text-slate-200"><i data-lucide="monitor" class="w-4 h-4"></i> Ubuntu VM</div>
-                                <div class="bg-dark/80 px-3 py-1.5 rounded border border-green-500/50 text-xs w-full flex justify-center gap-2 items-center">
-                                    <i data-lucide="cpu" class="w-3 h-3"></i> NVIDIA RTX
-                                </div>
-                            </div>
-
-                            <i data-lucide="arrow-down" class="mx-auto text-green-400 animate-pulse w-5 h-5"></i>
-                            
-                            <div class="bg-slate-800 border border-primary px-4 py-3 rounded-lg text-sm font-mono text-primary shadow-[0_0_15px_rgba(20,184,166,0.2)] flex items-center justify-center gap-2">
-                                <i data-lucide="bot" class="w-5 h-5"></i> Ollama (Llama 3)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Project 3 -->
-
             </div>
         </div>
     </section>
